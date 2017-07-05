@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="clockIt">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Clock-It, Drop-It, Stop-It!</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+  <ui-view></ui-view>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- AngularUI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCc0pb08wwWm_a9aAXgUCgpJXX_kWnEhLQ",
+        authDomain: "clock-it-5dd63.firebaseapp.com",
+        databaseURL: "https://clock-it-5dd63.firebaseio.com",
+        projectId: "clock-it-5dd63",
+        storageBucket: "",
+        messagingSenderId: "935212440590"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Application Files -->
     <script src="/scripts/app.js"></script>
 </body>
 </html>
