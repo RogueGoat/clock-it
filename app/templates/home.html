@@ -1,4 +1,15 @@
-<div class="text-center">
-        <button type="button" class='btn btn-info btn-lg' ng-show="!home.timerRunning" ng-click="home.startTimer()"> {{ home.buttonMsg }}</button>
-        <button type="button" class='btn btn-warning btn-lg' ng-show="home.timerRunning" ng-click="home.resetTimer()"> {{ home.buttonMsg }}</button>
-</div>
+
+<section class="main">
+  <h1>Clock-it</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 timer">
+        {{ timer }}
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+          <button type="button" class='btn-go' ng-show="!home.timerRunning" ng-click="home.startTimer()"> {{ home.buttonMsg }}</button>
+          <button type="button" class='btn-stop' ng-show="home.timerRunning" ng-click="home.resetTimer()"> {{ home.buttonMsg }}</button>
+  </div>
+</section>

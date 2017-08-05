@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+  font-size: 100px !important;
+  font-family: 'Sacramento', cursive !important;
+  padding-bottom: 40px !important;
+}
+.timer {
+  text-align: center;
+  padding-bottom: 100px;
+  font-size: 20px;
+}
+
+.main {
+  border-top: 3px solid #dbc89b;
+  border-bottom: 3px solid #dbc89b;
+  color: white;
+  margin-top: 100px;
+  background-color: #ffbcbc;
+  padding: 100px;
+}
+
+.btn-go, .btn-stop {
+  color: #7c6d49;
+  border: 3px solid #7c6d49;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 250px;
+  padding: 10px 0 10px 0;
+}
+
+.btn-go:hover,
+.btn-stop:hover {
+  background-color: #7c6d49;
+  color: #ffbcbc;
+}
